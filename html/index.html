@@ -1,0 +1,266 @@
+<!DOCTYPE>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width">
+  <title>sample</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <h1 class="logo"><img src="img/logo.png"></h1>
+    <div class="header_menu_box">
+      <div class="header_user_navi">
+        <ul class="header_personal">
+          <li>さとうりえ</li>
+          <li><a href="#">ログアウト</a></li>
+        </ul>
+      </div>
+      <div class="header_app_navi">
+        <ul>
+          <li><a href="#">タイムカード一覧</a></li>
+          <li><a href="#">スケジュール一覧</a></li>
+          <li><a href="#">ファイル</a></li>
+          <li><a href="#">メモ</a></li>
+          <li><a href="#">To Do</a></li>
+          <li><a href="#">ツール</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="top" class="wrapper">
+    <div class="side_contents">
+      <p><a href="#">タイムカード 一覧</a></p>
+      <ul class="timecard_btn">
+        <li class="at_work"><a href="#">出勤</a></li>
+        <li class="lunch"><a href="#">お昼</a></li>
+        <li class="leaving_work"><a href="#">退勤</a></li>
+      </ul>
+      <div class="calendar_box">
+        <div class="month_ber">
+          <p class="previous"><a href="#">前の月</a></p>
+          <p class="this_month">2022年8月</p>
+          <p class="next"><a href="#">次の月</a></p>
+        </div>
+        <div class="calendar_inner">
+          <table>
+            <tr>
+              <td><span id="cal_mon" class="mon">月</span></td>
+              <td><span id="cal_tue" class="tue">火</span></td>
+              <td><span id="cal_wed" class="wed">水</span></td>
+              <td><span id="cal_thu" class="thu">木</span></td>
+              <td><span id="cal_fri" class="fri">金</span></td>
+              <td><span id="cal_sat" class="sat">土</span></td>
+              <td><span id="cal_sun" class="sun">日</span></td>
+            </tr>
+            <tr>
+              <td>
+                <span id="cal_mon00">
+                </span>
+              </td>
+              <td>
+                <span id="cal_tue00">
+                </span>
+              </td>
+              <td>
+                <span id="cal_wed00">
+                </span>
+              </td>
+              <td>
+                <span id="cal_thu00">
+                </span>
+              </td>
+              <td>
+                <span id="cal_fri00">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sat00">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sun00">
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="cal_mon01">
+                </span>
+              </td>
+              <td>
+                <span id="cal_tue01">
+                </span>
+              </td>
+              <td>
+                <span id="cal_wed01">
+                </span>
+              </td>
+              <td>
+                <span id="cal_thu01">
+                </span>
+              </td>
+              <td>
+                <span id="cal_fri01">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sat01">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sun01">
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="cal_mon02">
+                </span>
+              </td>
+              <td>
+                <span id="cal_tue02">
+                </span>
+              </td>
+              <td>
+                <span id="cal_wed02">
+                </span>
+              </td>
+              <td>
+                <span id="cal_thu02">
+                </span>
+              </td>
+              <td>
+                <span id="cal_fri02">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sat02">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sun02">
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="cal_mon03">
+                </span>
+              </td>
+              <td>
+                <span id="cal_tue03">
+                </span>
+              </td>
+              <td>
+                <span id="cal_wed03">
+                </span>
+              </td>
+              <td>
+                <span id="cal_thu03">
+                </span>
+              </td>
+              <td>
+                <span id="cal_fri03">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sat03">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sun03">
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="cal_mon04">
+                </span>
+              </td>
+              <td>
+                <span id="cal_tue04">
+                </span>
+              </td>
+              <td>
+                <span id="cal_wed04">
+                </span>
+              </td>
+              <td>
+                <span id="cal_thu04">
+                </span>
+              </td>
+              <td>
+                <span id="cal_fri04">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sat04">
+                </span>
+              </td>
+              <td>
+                <span id="cal_sun04">
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="cal_mon05">
+                  -
+                </span>
+              </td>
+              <td>
+                <span id="cal_tue05">
+                  -
+                </span>
+              </td>
+              <td>
+                <span id="cal_wed05">
+                  -
+                </span>
+              </td>
+              <td>
+                <span id="cal_thu05">
+                  -
+                </span>
+              </td>
+              <td>
+                <span id="cal_fri05">
+                  -
+                </span>
+              </td>
+              <td>
+                <span id="cal_sat05">
+                  -
+                </span>
+              </td>
+              <td>
+                <span id="cal_sun05">
+                  -
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="main_contents">
+      <div class="schedule_result">
+        <ul class="schedule_btn">
+          <li class="creating"><a href="#">予定作成</a></li>
+          <li class="week"><a href="#">週</a></li>
+          <li class="month"><a href="#">月</a></li>
+        </ul>
+      </div>
+      <p class="f-en ">ToDo List</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
