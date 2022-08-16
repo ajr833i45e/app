@@ -226,6 +226,37 @@ small {
 .creating a{background: #FD5778;color: #fff;}
 .week a{background: #FFC4C4;}
 .month a{background: #FFC4C4;}
+.job_schedule{}
+
+
+table.schedule_calendar_table {
+  width: 100%;
+  border-collapse: collapse;
+	font-size: .75rem; 
+}
+table.schedule_calendar_table th,
+table.schedule_calendar_table td {
+  border: 1px solid #CDCDCD;
+  vertical-align: top;
+}
+table.schedule_calendar_table th {
+  background-color: #F0F0F0;
+  padding: 5px;
+  text-align: center;
+  font-style: normal;
+}
+table.schedule_calendar_table td.days {
+  background-color: #F5F7F8;
+  height: 10px;
+  padding: 5px;
+  text-align: center;
+}
+table.schedule_calendar_table td.sch_box2 {
+  height: 85px;
+  max-width: 14%;
+  width: 14%;
+  padding: 5px 2px;
+}
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 640px) {
