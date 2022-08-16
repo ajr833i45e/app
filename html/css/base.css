@@ -233,23 +233,58 @@ table.schedule_calendar_table {
   width: 100%;
   border-collapse: collapse;
 	font-size: .75rem; 
+	border: 1px solid #CDCDCD;
 }
-table.schedule_calendar_table th,
+
 table.schedule_calendar_table td {
-  border: 1px solid #CDCDCD;
+	border-bottom: none;
+  border-right: 1px solid #CDCDCD;
   vertical-align: top;
 }
 table.schedule_calendar_table th {
-  background-color: #F0F0F0;
   padding: 5px;
   text-align: center;
   font-style: normal;
+	border-bottom: none;
+	border-right: 1px solid #CDCDCD;
+	font-size: 1.05rem;
+	position: relative;
+}
+table.schedule_calendar_table th span{
+	font-size: .875rem;
+}
+table.schedule_calendar_table th::after{
+	content: "";
+	border: solid 5px #A6A6A6;
+	display: inline-block;
+	width: 15%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	content: none;
 }
 table.schedule_calendar_table td.days {
-  background-color: #F5F7F8;
-  height: 10px;
   padding: 5px;
   text-align: center;
+}
+table.schedule_calendar_table td.days a{
+	color: #fff;
+}
+table.schedule_calendar_table td.days .border-radius{
+	width: 34px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #5D5D5D;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+	margin: auto;
+}
+table.schedule_calendar_table td.days.saturday .border-radius{
+	background-color: #57AAFD;
+}
+table.schedule_calendar_table td.days.sunday .border-radius{
+	background-color: #FD5778;
 }
 table.schedule_calendar_table td.sch_box2 {
   height: 85px;
@@ -257,6 +292,16 @@ table.schedule_calendar_table td.sch_box2 {
   width: 14%;
   padding: 5px 2px;
 }
+table.schedule_calendar_table td.sch_box2 a:link{ color: #FC1845;}
+table.schedule_calendar_table td.sch_box2 a:visited{color: #FC1845;}
+table.schedule_calendar_table td.sch_box2 a:active{color: #FC1845;}
+table.schedule_calendar_table div.sch_box div{padding-bottom:12px;}
+table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span{
+	font-size: 0.5rem;
+}
+.ico_box{height: 20px; text-align: center;}
+.ico_box .ico_img{color: #FDEF57;}
+.nowdate{vertical-align: top; background-color: rgb(238, 245, 249);}
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 640px) {
