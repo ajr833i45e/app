@@ -131,7 +131,7 @@ small {
 	color: #FFF3F5;
 	text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 	background: #fff;
-	display: inline-block;
+	display: block;
 	padding: 0 20px;
 	font-size: 1.5em;
 	letter-spacing: 0.2em;
@@ -228,7 +228,7 @@ small {
 .month a{background: #FFC4C4;}
 .job_schedule{}
 
-
+.schedule_wap{/*max-width:800px; overflow-y:hidden;overflow-x:auto;*/}
 table.schedule_calendar_table {
   width: 100%;
   border-collapse: collapse;
@@ -295,10 +295,31 @@ table.schedule_calendar_table td.sch_box2 {
 table.schedule_calendar_table td.sch_box2 a:link{ color: #FC1845;}
 table.schedule_calendar_table td.sch_box2 a:visited{color: #FC1845;}
 table.schedule_calendar_table td.sch_box2 a:active{color: #FC1845;}
-table.schedule_calendar_table div.sch_box div{padding-bottom:12px;}
+table.schedule_calendar_table div.sch_box div{padding-bottom:6px;}
 table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span{
 	font-size: 0.5rem;
 }
+.schedule_todo_box{
+	border: solid #FFDDDD 1px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	list-style: none;
+	padding: 5px;
+	margin: 0 auto;
+	width: 90%;
+	box-sizing: border-box;
+}
+.schedule_todo_box li{
+  font-size: 0.5rem;
+	padding-left:1em;
+	text-indent:-1em;
+}
+.schedule_todo_box li::before{
+	content: "□";
+	margin: 0;
+}
+.gadget_section{display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;}
+.gadget_result_div{ width: 49%;}
 .ico_box{height: 20px; text-align: center;}
 .ico_box .ico_img{color: #FDEF57;}
 .nowdate{vertical-align: top; background-color: rgb(238, 245, 249);}

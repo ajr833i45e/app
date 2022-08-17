@@ -257,6 +257,7 @@
           <li class="month"><a href="#">月</a></li>
         </ul>
       </div>
+      <div class="schedule_wap">
       <table id="job_schedule" class="schedule_calendar_table">
         <tbody>
           <tr>
@@ -330,6 +331,11 @@
                   </span>
                 </div>
               </div>
+              <ul class="schedule_todo_box">
+                <li>今日のTo Do</li>
+                <li>今日のTo Do02</li>
+              
+              </ul>
             </td>
 
             <td id="#" class="sch_box2 nowdate">
@@ -387,7 +393,43 @@
           </tr>
         </tbody>
       </table>
-      <p class="f-en ">ToDo List</p>
+    </div>
+    <div class="gadget_section">
+      <div id="todo" class="wrap_box gadget_style">
+        <h2>
+        <span class="main_menu"><img src="/images/icon/icon_todo01.png" alt="新着ToDo" title="新着ToDo" class="icon">新着ToDo<a href="/url_redirector/index/id/12" target="_blank"><img src="/images/icon/icon_help03.gif" width="19" height="20" class="icon_help" alt="ToDo" title="ToDo"></a></span>
+        <span class="side_menu">
+      
+              <a href="/todo/index">一覧</a> 
+              | <a href="/todo/new/" id="regist">登録</a>
+              </span>
+        </h2>
+        <div id="todo_result" class="gadget_result_div">
+         <table id="todo_result_data" class="gadget_inner_style list_table">
+         <thead>
+         <tr>
+         <th>期限</th>
+         <th>ToDo名&nbsp;(重要度)</th>
+         </tr>
+         </thead>
+         <tbody>
+            <tr>
+         <td>
+           指定なし</td>
+         <td>
+           <div class="ellipsis adjustable_width_todo" style="float: left;">
+            <span title="鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バナー">
+              <a href="/todo/show/f/452455">鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バナー</a></span>&nbsp;(通常)</div>
+           <div style="float: right;"><a href="#" id="todoId_452455" onclick="todoClickComplete(this);return false;"><img src="/images/bt/bt_todo_complete01.gif" title="ToDoを完了する"></a>
+          </div>
+         </td>
+         </tr>
+            </tbody>
+         </table>
+      </div>
+      </div>
+    </div>
+      <p class="f-en">ToDo List</p>
     </div>
   </div>
 
