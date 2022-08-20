@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>sample</title>
   <link rel="stylesheet" href="css/base.css">
-  <style>
-
-  </style>
 </head>
 
 <body>
@@ -35,7 +32,7 @@
   </div>
   <div id="top" class="wrapper">
     <div class="side_contents">
-      <p><a href="#">タイムカード 一覧</a></p>
+      <p class="side_ttl"><a href="#">タイムカード 一覧</a></p>
       <ul class="timecard_btn">
         <li class="at_work"><a href="#">出勤</a></li>
         <li class="lunch"><a href="#">お昼</a></li>
@@ -248,6 +245,7 @@
           </table>
         </div>
       </div>
+      <p class="side_ttl">今日のお知らせ</p>
     </div>
     <div class="main_contents">
       <div class="schedule_result">
@@ -258,181 +256,298 @@
         </ul>
       </div>
       <div class="schedule_wap">
-      <table id="job_schedule" class="schedule_calendar_table">
-        <tbody>
-          <tr>
-            <th class=" m_left">月 <span>Mon</span></th>
-            <th class="">火 <span>Tue</span></th>
-            <th class="">水 <span>Wed</span></th>
-            <th class="">木 <span>Thu</span></th>
-            <th class="">金 <span>Fri</span></th>
-            <th class="saturday">土 <span>Sat</span></th>
-            <th class="sunday m_right">日 <span>Sun</span></th>
-          </tr>
-
-          <tr>
-            <td class="days">
-              <p class="border-radius"><a href="#">15</a></p>
-            </td>
-            <td class="days">
-              <p class="border-radius"><a href="#">16</a></p>
-            </td>
-            <td class="days">
-              <p class="border-radius"><a href="#">17</a></p>
-            </td>
-            <td class="days">
-              <p class="border-radius"><a href="#">18</a></p>
-            </td>
-            <td class="days">
-              <p class="border-radius"><a href="#">19</a></p>
-            </td>
-            <td class="days saturday" style="background-color: rgb(237, 249, 255);">
-              <p class="border-radius"><a href="#">20</a></p>
-            </td>
-            <td class="days sunday" style="background-color: rgb(255, 237, 237);">
-              <p class="border-radius"><a href="#">21</a></p>
-            </td>
-          </tr>
-          <tr>
-
-            <td id="#" class="sch_box2">
-              <div class="ico_box">
-                <p class="ico_img">&#9733</p>
-              </div>
-              <div class="sch_box">
-                <div class="sch_89114669">
-                  <span>10:08-11:04</span>
-                  <span>
-                    <div class="ellipsis adjustable_width_schedule">
-                      <font id="pcolor" size="1" color="#FC1845">●</font>
-                      <a title="鴨川シーワールド" id="scheduleid_89114669"
-                        rel="89114669" class="scha"
-                        href="/schedule/edit/schedule_id/89114669/time/1660489200">鴨川シーワールド</a>
-                    </div>
-                  </span>
-                </div>
-                <div class="sch_89114759">
-                  <span>11:18-12:18</span>
-                  <span>
-                    <div class="ellipsis adjustable_width_schedule">
-                      <font id="pcolor" size="1" color="#FC1845">●</font> <a title="イオン北海道" id="scheduleid_89114759"
-                        rel="89114759" class="scha"
-                        href="/schedule/edit/schedule_id/89114759/time/1660489200">イオン北海道</a>
-                    </div>
-                  </span>
-                </div>
-                <div class="sch_89118915">
-                  <span>13:04-14:04</span>
-                  <span>
-                    <div class="ellipsis adjustable_width_schedule">
-                      <font id="pcolor" size="1" color="#FC1845">●</font> <a title="お昼休み" id="scheduleid_89118915"
-                        rel="89118915" class="scha" href="/schedule/edit/schedule_id/89118915/time/1660489200">お昼休み</a>
-                    </div>
-                  </span>
-                </div>
-              </div>
-              <ul class="schedule_todo_box">
-                <li>今日のTo Do</li>
-                <li>今日のTo Do02</li>
-              
-              </ul>
-            </td>
-
-            <td id="#" class="sch_box2 nowdate">
-              <div class="ico_box">
-                <p class="ico_img">&#9678</p>
-              </div>
-              <div class="sch_box">
-                <div class="sch_87079844">
-                  <span>16:00-16:30</span>
-                  <span>
-                    <div class="ellipsis adjustable_width_schedule">
-                      <font id="pcolor" size="1" color="#FC1845">●</font> <a title="鴨川シーワールド" id="scheduleid_87079844"
-                        rel="87079844" class="scha"
-                        href="/schedule/edit/schedule_id/87079844/time/1660489200">鴨川シーワールド</a>
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </td>
-
-            <td id="20220817" class="sch_box2">
-              <div class="ico_box">
-              </div>
-              <div class="sch_box">
-              </div>
-            </td>
-
-            <td id="20220818" class="sch_box2">
-              <div class="ico_box">
-              </div>
-              <div class="sch_box">
-              </div>
-            </td>
-
-            <td id="20220819" class="sch_box2">
-              <div class="sch_box">
-              </div>
-            </td>
-
-            <td id="20220820" class="sch_box2 saturday"
-              style="vertical-align: top; background-color: rgb(237, 249, 255);">
-              <div class="ico_box">
-              </div>
-              <div class="sch_box">
-              </div>
-            </td>
-
-            <td id="20220821" class="sch_box2 sunday"
-              style="vertical-align: top; background-color: rgb(255, 237, 237);">
-              <div class="ico_box">
-              </div>
-              <div class="sch_box">
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="gadget_section">
-      <div id="todo" class="wrap_box gadget_style">
-        <h2>
-        <span class="main_menu"><img src="/images/icon/icon_todo01.png" alt="新着ToDo" title="新着ToDo" class="icon">新着ToDo<a href="/url_redirector/index/id/12" target="_blank"><img src="/images/icon/icon_help03.gif" width="19" height="20" class="icon_help" alt="ToDo" title="ToDo"></a></span>
-        <span class="side_menu">
-      
-              <a href="/todo/index">一覧</a> 
-              | <a href="/todo/new/" id="regist">登録</a>
-              </span>
-        </h2>
-        <div id="todo_result" class="gadget_result_div">
-         <table id="todo_result_data" class="gadget_inner_style list_table">
-         <thead>
-         <tr>
-         <th>期限</th>
-         <th>ToDo名&nbsp;(重要度)</th>
-         </tr>
-         </thead>
-         <tbody>
+        <table id="job_schedule" class="schedule_calendar_table">
+          <tbody>
             <tr>
-         <td>
-           指定なし</td>
-         <td>
-           <div class="ellipsis adjustable_width_todo" style="float: left;">
-            <span title="鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バナー">
-              <a href="/todo/show/f/452455">鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バナー</a></span>&nbsp;(通常)</div>
-           <div style="float: right;"><a href="#" id="todoId_452455" onclick="todoClickComplete(this);return false;"><img src="/images/bt/bt_todo_complete01.gif" title="ToDoを完了する"></a>
+              <th class=" m_left">月 <span>Mon</span></th>
+              <th class="">火 <span>Tue</span></th>
+              <th class="">水 <span>Wed</span></th>
+              <th class="">木 <span>Thu</span></th>
+              <th class="">金 <span>Fri</span></th>
+              <th class="saturday">土 <span>Sat</span></th>
+              <th class="sunday m_right">日 <span>Sun</span></th>
+            </tr>
+
+            <tr>
+              <td class="days">
+                <p class="border-radius"><a href="#">15</a></p>
+              </td>
+              <td class="days">
+                <p class="border-radius"><a href="#">16</a></p>
+              </td>
+              <td class="days">
+                <p class="border-radius"><a href="#">17</a></p>
+              </td>
+              <td class="days">
+                <p class="border-radius"><a href="#">18</a></p>
+              </td>
+              <td class="days">
+                <p class="border-radius"><a href="#">19</a></p>
+              </td>
+              <td class="days saturday" style="background-color: rgb(237, 249, 255);">
+                <p class="border-radius"><a href="#">20</a></p>
+              </td>
+              <td class="days sunday" style="background-color: rgb(255, 237, 237);">
+                <p class="border-radius"><a href="#">21</a></p>
+              </td>
+            </tr>
+            <tr>
+
+              <td id="#" class="sch_box2">
+                <div class="ico_box">
+                  <p class="ico_img">&#9733</p>
+                </div>
+                <div class="sch_box">
+                  <div class="sch_89114669">
+                    <span>10:08-11:04</span>
+                    <span>
+                      <div class="ellipsis adjustable_width_schedule">
+                        <font id="pcolor" size="1" color="#FC1845">●</font>
+                        <a title="鴨川シーワールド" id="scheduleid_89114669" rel="89114669" class="scha"
+                          href="/schedule/edit/schedule_id/89114669/time/1660489200">鴨川シーワールド</a>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="sch_89114759">
+                    <span>11:18-12:18</span>
+                    <span>
+                      <div class="ellipsis adjustable_width_schedule">
+                        <font id="pcolor" size="1" color="#FC1845">●</font> <a title="イオン北海道" id="scheduleid_89114759"
+                          rel="89114759" class="scha"
+                          href="/schedule/edit/schedule_id/89114759/time/1660489200">イオン北海道</a>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="sch_89118915">
+                    <span>13:04-14:04</span>
+                    <span>
+                      <div class="ellipsis adjustable_width_schedule">
+                        <font id="pcolor" size="1" color="#FC1845">●</font> <a title="お昼休み" id="scheduleid_89118915"
+                          rel="89118915" class="scha"
+                          href="/schedule/edit/schedule_id/89118915/time/1660489200">お昼休み</a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <ul class="schedule_todo_box">
+                  <li>今日のTo Do</li>
+                  <li>今日のTo Do02</li>
+
+                </ul>
+              </td>
+
+              <td id="#" class="sch_box2 nowdate">
+                <div class="ico_box">
+                  <p class="ico_img">&#9678</p>
+                </div>
+                <div class="sch_box">
+                  <div class="sch_87079844">
+                    <span>16:00-16:30</span>
+                    <span>
+                      <div class="ellipsis adjustable_width_schedule">
+                        <font id="pcolor" size="1" color="#FC1845">●</font> <a title="鴨川シーワールド" id="scheduleid_87079844"
+                          rel="87079844" class="scha"
+                          href="/schedule/edit/schedule_id/87079844/time/1660489200">鴨川シーワールド</a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </td>
+
+              <td id="20220817" class="sch_box2">
+                <div class="ico_box">
+                </div>
+                <div class="sch_box">
+                </div>
+              </td>
+
+              <td id="20220818" class="sch_box2">
+                <div class="ico_box">
+                </div>
+                <div class="sch_box">
+                </div>
+              </td>
+
+              <td id="20220819" class="sch_box2">
+                <div class="sch_box">
+                </div>
+              </td>
+
+              <td id="20220820" class="sch_box2 saturday"
+                style="vertical-align: top; background-color: rgb(237, 249, 255);">
+                <div class="ico_box">
+                </div>
+                <div class="sch_box">
+                </div>
+              </td>
+
+              <td id="20220821" class="sch_box2 sunday"
+                style="vertical-align: top; background-color: rgb(255, 237, 237);">
+                <div class="ico_box">
+                </div>
+                <div class="sch_box">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="gadget_section">
+        <div id="todo" class="wrap_box gadget_style">
+          <div class="ttl_box">
+            <h2 class="ttl_text">ToDo List</h2>
+            <span class="side_menu">
+              <a href="/todo/index">一覧</a>
+              | <a href="/todo/new/" id="regist">登録</a>
+            </span>
           </div>
-         </td>
-         </tr>
+          <table id="todo_result_data" class="gadget_inner_style list_table">
+            <thead>
+              <tr>
+                <th>期限</th>
+                <th>ToDo名&nbsp;(重要度)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08/15</td>
+                <td>
+                  <div class="ellipsis adjustable_width_todo">
+                    <span title="鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バナー">
+                      <a href="/todo/show/f/452455">鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バ</a></span>
+                  </div>
+                  <div class="done"><a href="#" id="todoId_452455"
+                      onclick="todoClickComplete(this);return false;">ToDoを完了</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  指定なし</td>
+                <td>
+                  <div class="ellipsis adjustable_width_todo">
+                    <span title="鴨川シーワールド　ホテルトップ「ハッピーオルカタイム」バナー">
+                      <a href="/todo/show/f/452455">鴨川シーワールド　ホテルトッ</a></span>
+                  </div>
+                  <div class="done"><a href="#" id="todoId_452455"
+                      onclick="todoClickComplete(this);return false;">ToDoを完了</a>
+                  </div>
+                </td>
+              </tr>
             </tbody>
-         </table>
+          </table>
+        </div>
+        <div id="topic" class="wrap_box gadget_style">
+          <div class="ttl_box">
+            <h2 class="ttl_text">ツール</h2>
+            <span class="side_menu">
+              <a href="/todo/index">一覧</a>
+              | <a href="/todo/new/" id="regist">登録</a>
+            </span>
+          </div>
+          <table id="topic_result_data" class="gadget_inner_style list_table">
+            <thead>
+              <tr>
+                <th>期限</th>
+                <th>トピック名</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>07/14</td>
+                <td>
+                  <div class="ellipsis adjustable_width_topic">
+                    <a href="/topic/show/topic_id/459506">時間の計算</a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="even">
+                <td>07/13</td>
+                <td>
+                  <div class="ellipsis adjustable_width_topic" style="width: 302px;">
+                    <a href="/topic/show/topic_id/459501">e-timecard</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+      <div class="gadget_section">
+        <div id="memopad" class="wrap_box gadget_style">
+          <div class="ttl_box">
+            <h2 class="ttl_text">メモ</h2>
+            <span class="side_menu">
+              <a href="/todo/index">一覧</a>
+              | <a href="/todo/new/" id="regist">登録</a>
+            </span>
+          </div>
+          <table id="memopad_result_data" class="gadget_inner_style list_table">
+            <thead>
+              <tr>
+                <th>更新日時</th>
+                <th>メモ名&nbsp;(プロジェクト名)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08/14</td>
+                <td>
+                  <div class="ellipsis adjustable_width_memopad">
+                    <span title="pas"><a href="/memopad/desc/id/412173">pas</a>&nbsp;(自分のメモ)</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="even">
+                <td>08/12</td>
+                <td>
+                  <div class="ellipsis adjustable_width_memopad">
+                    <span title="メモ"><a href="/memopad/desc/id/409396">メモ</a>&nbsp;(自分のメモ)</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>07/21</td>
+                <td>
+                  <div class="ellipsis adjustable_width_memopad">
+                    <span title="何番目"><a href="/memopad/desc/id/406731">何番目</a>&nbsp;(自分のメモ)</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="minutes" class="wrap_box gadget_style">
+          <div class="ttl_box">
+            <h2 class="ttl_text">新着議事録</h2>
+            <span class="side_menu">
+              <a href="/todo/index">一覧</a>
+              | <a href="/todo/new/" id="regist">登録</a>
+            </span>
+          </div>
+          <table id="minutes_result_data" class="gadget_inner_style list_table">
+            <thead>
+            <tr>
+              <th>受信日時</th>
+              <th>議事録名&nbsp;(作成者)</th>
+            </tr>
+            </thead>
+            <tbody>
+                  <tr>
+              <td>19:31</td>
+              <td>
+                <div class="ellipsis adjustable_width_minutes">
+                          <span title="テスト"><a href="/minutes/show/id/41815">テスト</a>&nbsp;(佐藤 理江)</span>
+                </div>
+              </td>
+            </tr>
+              </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-      <p class="f-en">ToDo List</p>
+      <p class="copyright">Copyright (c) Sato Rie. All Rights Reserved.</p>
     </div>
   </div>
-
 </body>
 
 </html>
