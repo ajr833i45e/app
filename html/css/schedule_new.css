@@ -1,0 +1,188 @@
+﻿@charset "utf-8";
+
+/* =======================================
+
+	CommonElements
+
+======================================= */
+
+
+p {
+	font-size: calc(13 / var(--root-font-size) * 1rem);
+}
+
+/* コピペ用コード */
+.font-size-dummy {
+	font-size: .625rem;
+	/* 10px */
+	font-size: .75rem;
+	/* 12px */
+	font-size: .8125rem;
+	/* 13px */
+	font-size: .875rem;
+	/* 14px */
+	font-size: 1rem;
+	/* 16px */
+	font-size: 1.25rem;
+	/* 20px */
+	font-size: 1.75rem;
+	/* 28px */
+}
+small {
+	padding: 0;
+	width: 100%;
+	font-size: 80%;
+	font-weight: normal;
+}
+
+
+
+/* side_contents
+--------------------------- */
+
+
+
+/* Wrapper
+--------------------------- */
+#schedule_new.wrapper {
+	width: 100%;
+	text-align: left;
+	background: #fff;
+	display: block;
+	justify-content: center;
+	padding: 0 1em;
+	box-sizing: border-box;
+}
+
+.main_contents {
+	padding: 0px 0px 0 0px;
+	width: 88%;
+	margin-left: 1.48%;
+}
+.component{}
+.component .contents_ttl{}
+table.form_table{
+	border-collapse:collapse;
+	border: 1px solid #EBEBEB;
+	width: 100%;
+	font-size: .875rem;
+}
+table.form_table th{
+	border:1px solid #EBEBEB;
+	margin-top:1px;
+	text-align:center;
+	vertical-align:middle;
+	white-space:nowrap;
+	width: 20%;
+	padding: 5px;
+	background: #FFF3F5;
+}
+table.list_table td, table.detail_table td, table.form_table td{
+	border-left:1px solid #EBEBEB;
+	border-bottom:1px solid #EBEBEB;
+	padding:7px;
+}
+.memo {
+  background-color: #FFF3F5;
+  border: 1px solid #cdcdcd;
+  font-size: 12px;
+  width: 490px;
+  height: 100px;
+  margin: 10px 0;
+  padding: 5px;
+  resize: none; // for Google Chrome
+}
+.message{
+	color: red;
+}
+a.btn_file{
+	background: #FD5778;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+a.btn_color01{
+	background: #FFC4C4;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+a.btn_color02{
+	background: #C9C7C7;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+.operation_component{
+	padding-top: 2%;
+}
+.main_menu{
+	font-size: .75rem;
+}
+div.event_date_component input.event_start_date, div.event_date_component input.event_end_date{
+	width: 20%;
+}
+div.event_date_component input.event_start_time, div.event_date_component input.event_end_time{
+	width: 20%;
+}
+#title, #place{
+	width: 90%;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 640px) {
+	.header_app_navi{
+		display: none;
+	}
+	#top.wrapper{
+		display: block;
+		padding: 0 2.5%;
+	}
+	.side_contents{
+		min-width: inherit;
+		width: 100%;
+	}
+	.main_contents{
+		width: 100%;
+		margin-left: 0;
+	}
+	table.form_table{
+		box-sizing: border-box;
+		border-collapse:collapse;
+	}
+	table.form_table th{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	table.form_table td{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.memo{
+		width: 100%;
+	}
+	div.event_date_component input.event_start_date, div.event_date_component input.event_end_date{
+		width: 23%;
+		font-size: .5rem;
+	}
+	div.event_date_component input.event_start_time, div.event_date_component input.event_end_time{
+		width: 18%;
+		font-size: .5rem;
+	}
+	#title{
+		width: 100%;
+	}
+	#attachment_file_view a.btn_file{
+		width: 50%;
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+	.operation_component{
+		text-align: center;
+		padding-top: 5%;
+	}
+}

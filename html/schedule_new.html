@@ -1,0 +1,178 @@
+<!DOCTYPE>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>スケジュール作成</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/schedule_new.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1 class="logo"><img src="img/logo.png"></h1>
+    <div class="header_menu_box">
+      <div class="header_user_navi">
+        <ul class="header_personal">
+          <li>さとうりえ</li>
+          <li><a href="#">ログアウト</a></li>
+        </ul>
+      </div>
+      <div class="header_app_navi">
+        <ul>
+          <li><a href="#">タイムカード一覧</a></li>
+          <li><a href="#">スケジュール一覧</a></li>
+          <li><a href="#">ファイル</a></li>
+          <li><a href="#">メモ</a></li>
+          <li><a href="#">To Do</a></li>
+          <li><a href="#">ツール</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="schedule_new" class="wrapper">
+
+    <div class="component">
+      <h2 class="contents_ttl">
+        <span class="main_menu">
+          スケジュール作成</span>
+      </h2>
+      <table class="form_table">
+        <tbody>
+          <tr>
+            <th>タイトル<span class="message">*</span><br>
+              <small>最大100文字以内</small>
+            </th>
+            <td colspan="3">
+              <input type="text" name="title" id="title" value="" size="100" maxlength="100">
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              日時<span class="message">*</span><br>
+            </th>
+            <td colspan="3">
+              <div style="padding: 7px 0;">
+                <div id="event_date_63022af48643e" class="event_date_component">
+                  <!-- 繰り返し項目start -->
+                  <div style="padding: 0 0 10px 0;margin: 0;">
+                    <div class="form_error error_for_recurrence" style="display:none;" id="error_for_recurrence"> </div>
+
+
+                    <div id="recur_main_block63022af48643e">
+                      <input type="hidden" name="past_freq" id="past_freq" value="0">
+                      <div style="padding:7px 0;">
+                        <label for="recur_freq">繰り返し:</label>
+                        <select name="recur[freq]" id="recur_freq63022af48643e">
+                          <option value="">なし</option>
+                          <option value="1">日</option>
+                          <option value="2">週</option>
+                          <option value="3">月（日付指定）</option>
+                          <option value="23">月（週指定）</option>
+                          <option value="13">月（曜日指定）</option>
+                          <option value="4">年</option>
+                        </select>
+                      </div>
+
+
+
+                    </div>
+                  </div>
+                  <!-- 繰り返し項目end -->
+
+                  <!-- 日付指定start -->
+                  <div id="event_date_block63022af48643e">
+                    <input type="text" value="2022/08/21" class="default_input_title event_start_date hasDatepicker"
+                      maxlength="10" readonly=""> <input type="text" name="event_start[time]"
+                      id="event_start_time63022af48643e" value="08:00" class="default_input_title event_start_time"
+                      maxlength="5"> ～
+                    <input type="text" value="2022/08/21" class="default_input_title event_end_date hasDatepicker"
+                      maxlength="10" readonly=""> <input type="text" name="event_end[time]"
+                      id="event_end_time63022af48643e" value="09:00" class="default_input_title event_end_time"
+                      maxlength="5" style="">&nbsp;
+                    <input type="checkbox" name="allday_flag" id="allday_flag63022af48643e" value="1"> &nbsp;
+                    <label for="allday_flag63022af48643e" style="vertical-align:middle;">終日</label>
+                  </div>
+                  <!-- 日付指定end -->
+
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>種別</th>
+            <td colspan="3">
+              <select name="type" id="type">
+                <option value="0">ToDo</option>
+                <option value="1">会議</option>
+                <option value="2">外出</option>
+                <option value="3">出張</option>
+                <option value="4">休み</option>
+                <option value="5">直行</option>
+                <option value="6">直帰</option>
+                <option value="7">打合せ</option>
+                <option value="8">来客</option>
+                <option value="9">重要</option>
+                <option value="11">面接</option>
+                <option value="10">その他</option>
+              </select>
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <th>メモ<br>
+              <small>最大10000文字以内</small>
+            </th>
+            <td colspan="3">
+              <textarea name="memo" id="memo" class="memo"></textarea>
+            </td>
+          </tr>
+
+
+          <tr id="attachment_files_block" style="">
+            <th>添付ファイル<br>
+              <div class="font_10">(1ファイル10MBまで)</div>
+            </th>
+            <td colspan="3">
+
+              <div id="attachment_file_view">
+
+                <div id="pickbase">
+                  <a id="pickfiles" class="btn_file" href="#">ファイルの指定</a>
+                  <div id="p1gb07fokgr7rctljg512cj1pgt0_html5_container" class="plupload html5"
+                    style="position: absolute; background: transparent; width: 90px; height: 20px; overflow: hidden; z-index: -1; opacity: 0; top: 0px; left: 0px;">
+                    <input id="p1gb07fokgr7rctljg512cj1pgt0_html5"
+                      style="font-size: 999px; position: absolute; width: 100%; height: 100%;" type="file" accept="">
+                  </div>
+                </div>
+
+              </div>
+
+              <input type="hidden" name="countOfFile" id="countOfFile" value="0"><input type="hidden"
+                name="fileSizeCapa" id="fileSizeCapa" value="10">
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="operation_component">
+        <span class="main_menu">
+          <input type="text" name="ret_url" id="ret_url" value="" style="display: none;">
+          <a id="save" class="btn_file" href="#">保存</a>
+          <a id="save" class="btn_color02" href="/schedule">キャンセル</a></span>
+        <span class="side_menu">
+          <div id="submit_message" class="form_error"></div>
+        </span>
+      </div>
+    </div>
+    <p class="copyright">Copyright (c) Sato Rie. All Rights Reserved.</p>
+  </div>
+</body>
+
+</html>

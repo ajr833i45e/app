@@ -91,13 +91,6 @@ ul {
 	list-style: none;
 }
 
-small {
-	padding: 30px 0;
-	width: 100%;
-	font-size: 12px;
-	text-align: center;
-	display: block;
-}
 
 #container {
 	width: 100%;
@@ -215,6 +208,8 @@ small {
 	min-width: 220px;
 }
 .side_contents .side_ttl{font-size: .875rem; margin: 0; padding: 12px 0;}
+.side_contents .info_box{margin: 0; padding: 10px 0;}
+.side_contents .info_box .info_text{font-size: .875rem; line-height: 1.2; margin: 0; padding:5px 0;}
 .timecard_btn {
 	margin: 0;
 	padding: 10px 5px 10px 0;
@@ -230,7 +225,9 @@ small {
 	padding: 3px 13px;
 	margin: 0;
 }
-
+.timecard_btn li a{
+	color: #FFF;
+}
 .at_work {
 	background: #FD5778;
 	color: #fff;
@@ -324,7 +321,7 @@ small {
 
 /* Wrapper
 --------------------------- */
-.wrapper {
+#top.wrapper {
 	width: 100%;
 	text-align: left;
 	background: #fff;
@@ -379,11 +376,6 @@ small {
 	background: #FFC4C4;
 }
 
-.job_schedule {}
-
-.schedule_wap {
-	/*max-width:800px; overflow-y:hidden;overflow-x:auto;*/
-}
 
 table.schedule_calendar_table {
 	width: 100%;
@@ -457,7 +449,12 @@ table.schedule_calendar_table td.sch_box2 {
 	width: 14%;
 	padding: 5px 2px;
 }
-
+table.schedule_calendar_table td.sch_box2 a::before{
+	content: "●";
+	display:inline-block;
+	margin: 0;
+	padding: 0;
+}
 table.schedule_calendar_table td.sch_box2 a:link {
 	color: #FC1845;
 }
@@ -475,9 +472,11 @@ table.schedule_calendar_table div.sch_box div {
 }
 
 table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
-	font-size: 0.5rem;
+	font-size: .75rem;
 }
-
+table#job_schedule.schedule_calendar_table tbody tr td.sch_box2 div.sch_box span:first-of-type{
+  font-size: .5rem;
+}
 .schedule_todo_box {
 	border: solid #FFDDDD 1px;
 	background: #FFFFFF;
@@ -505,7 +504,7 @@ table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .gadget_result_div {
@@ -558,7 +557,7 @@ table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
 
 .wrap_box#todo .ttl_box::after {
 	content: "";
-	background: url(/img/ico_todo_list.png) no-repeat;
+	background: url(../img/ico_todo_list.png) no-repeat;
 	width: 50px;
 	height: 45px;
 	position: absolute;
@@ -570,7 +569,7 @@ table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
 
 .wrap_box#topic .ttl_box::after {
 	content: "";
-	background: url(/img/ico_tool.png) no-repeat;
+	background: url(../img/ico_tool.png) no-repeat;
 	width: 33px;
 	height: 32px;
 	position: absolute;
@@ -582,7 +581,7 @@ table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
 
 .wrap_box#memopad .ttl_box::after {
 	content: "";
-	background: url(/img/ico_memo.png) no-repeat;
+	background: url(../img/ico_memo.png) no-repeat;
 	width: 47px;
 	height: 40px;
 	position: absolute;
@@ -594,7 +593,7 @@ table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
 
 .wrap_box#minutes .ttl_box::after {
 	content: "";
-	background: url(/img/ico_minutes.png) no-repeat;
+	background: url(../img/ico_minutes.png) no-repeat;
 	width: 33px;
 	height: 33px;
 	position: absolute;
@@ -623,6 +622,12 @@ table#job_schedule.schedule_calendar_table tbody tr td div.sch_box div span {
 .nowdate {
 	vertical-align: top;
 	background: #FFF3F5;
+}
+.days.saturday,.sch_box2.saturday{
+	background: rgb(237, 249, 255,0.2);
+}
+.days.sunday,.sch_box2.sunday{
+	background: rgb(255, 237, 237, 0.2);
 }
 
 .gadget_inner_style.list_table {
@@ -692,4 +697,93 @@ table.gadget_inner_style th:first-child {
 
 @media screen and (max-width: 1024px) {}
 
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 640px) {
+	.header_app_navi{
+		display: none;
+	}
+	#top.wrapper{
+		display: block;
+		padding: 0 2.5%;
+	}
+	.side_contents{
+		min-width: inherit;
+		width: 100%;
+	}
+	.main_contents{
+		width: 100%;
+		margin-left: 0;
+	}
+	.gadget_section{
+		display: block;
+		padding-top: 10%;
+	}
+	.gadget_inner_style.list_table{
+		font-size: .875rem;
+	}
+	.gadget_inner_style.list_table td{
+		padding: 7px 3px;
+	}
+	.main_contents div:nth-of-type(4){
+		padding-top: 0;
+	}
+	.wrap_box{
+		width: 100%;
+		padding-bottom: 10%;
+	}
+	.wrap_box .ttl_text{
+		padding-left: 12%;
+	}
+	.ttl_box{
+		padding-bottom: 2%;
+	}
+	.wrap_box#todo .ttl_box::after{
+		width: 8vw;
+    height: 8vw;
+		top:-2vw;
+	}
+	.wrap_box#topic .ttl_box::after{
+		width: 5vw;
+    height: 5vw;
+		top:0;
+	}
+	.wrap_box#memopad .ttl_box::after{
+		width: 7vw;
+    height: 7vw;
+		top:0;
+		left: 1%;
+	}
+	.wrap_box#minutes .ttl_box::after{
+		width: 7vw;
+    height: 7vw;
+		top:-2vw;
+		left: 2%;
+	}
+	.timecard_btn{
+		justify-content: center;
+	}
+	.timecard_btn li{
+		margin-right: 2em;
+	}
+	.timecard_btn li:last-of-type{
+		margin-right: 0;
+	}
+	.schedule_result .schedule_btn li{
+		margin-right: 2em;
+	}
+	.schedule_result .schedule_btn li:last-of-type{
+		margin-right: 0;
+	}
+	.schedule_result{
+		justify-content: center;
+	}
+  .schedule_wap {
+	max-width:800px; overflow-y:hidden;overflow-x:auto;
+}
+  table.schedule_calendar_table{
+	width: 800px;
+}
+.side_contents .info_box{
+	padding: 10px 0 20px;
+
+  }
+}

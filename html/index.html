@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>sample</title>
   <link rel="stylesheet" href="css/base.css">
 </head>
@@ -245,12 +245,16 @@
           </table>
         </div>
       </div>
-      <p class="side_ttl">今日のお知らせ</p>
+      <div class="info_box">
+        <h2 class="side_ttl">今日のお知らせ</h2>
+        <p class="info_text">お知らせテキスト</p>
+        <p class="info_text">お知らせテキストお知らせテキスト</p>
+      </div>
     </div>
     <div class="main_contents">
       <div class="schedule_result">
         <ul class="schedule_btn">
-          <li class="creating"><a href="#">予定作成</a></li>
+          <li class="creating"><a href="schedule_new.html">予定作成</a></li>
           <li class="week"><a href="#">週</a></li>
           <li class="month"><a href="#">月</a></li>
         </ul>
@@ -284,10 +288,10 @@
               <td class="days">
                 <p class="border-radius"><a href="#">19</a></p>
               </td>
-              <td class="days saturday" style="background-color: rgb(237, 249, 255);">
+              <td class="days saturday">
                 <p class="border-radius"><a href="#">20</a></p>
               </td>
-              <td class="days sunday" style="background-color: rgb(255, 237, 237);">
+              <td class="days sunday">
                 <p class="border-radius"><a href="#">21</a></p>
               </td>
             </tr>
@@ -302,7 +306,6 @@
                     <span>10:08-11:04</span>
                     <span>
                       <div class="ellipsis adjustable_width_schedule">
-                        <font id="pcolor" size="1" color="#FC1845">●</font>
                         <a title="鴨川シーワールド" id="scheduleid_89114669" rel="89114669" class="scha"
                           href="/schedule/edit/schedule_id/89114669/time/1660489200">鴨川シーワールド</a>
                       </div>
@@ -312,7 +315,7 @@
                     <span>11:18-12:18</span>
                     <span>
                       <div class="ellipsis adjustable_width_schedule">
-                        <font id="pcolor" size="1" color="#FC1845">●</font> <a title="イオン北海道" id="scheduleid_89114759"
+                        <a title="イオン北海道" id="scheduleid_89114759"
                           rel="89114759" class="scha"
                           href="/schedule/edit/schedule_id/89114759/time/1660489200">イオン北海道</a>
                       </div>
@@ -322,7 +325,7 @@
                     <span>13:04-14:04</span>
                     <span>
                       <div class="ellipsis adjustable_width_schedule">
-                        <font id="pcolor" size="1" color="#FC1845">●</font> <a title="お昼休み" id="scheduleid_89118915"
+                        <a title="お昼休み" id="scheduleid_89118915"
                           rel="89118915" class="scha"
                           href="/schedule/edit/schedule_id/89118915/time/1660489200">お昼休み</a>
                       </div>
@@ -345,7 +348,7 @@
                     <span>16:00-16:30</span>
                     <span>
                       <div class="ellipsis adjustable_width_schedule">
-                        <font id="pcolor" size="1" color="#FC1845">●</font> <a title="鴨川シーワールド" id="scheduleid_87079844"
+                        <a title="鴨川シーワールド" id="scheduleid_87079844"
                           rel="87079844" class="scha"
                           href="/schedule/edit/schedule_id/87079844/time/1660489200">鴨川シーワールド</a>
                       </div>
@@ -373,16 +376,14 @@
                 </div>
               </td>
 
-              <td id="20220820" class="sch_box2 saturday"
-                style="vertical-align: top; background-color: rgb(237, 249, 255);">
+              <td id="20220820" class="sch_box2 saturday">
                 <div class="ico_box">
                 </div>
                 <div class="sch_box">
                 </div>
               </td>
 
-              <td id="20220821" class="sch_box2 sunday"
-                style="vertical-align: top; background-color: rgb(255, 237, 237);">
+              <td id="20220821" class="sch_box2 sunday">
                 <div class="ico_box">
                 </div>
                 <div class="sch_box">
@@ -448,29 +449,31 @@
           <table id="topic_result_data" class="gadget_inner_style list_table">
             <thead>
               <tr>
-                <th>期限</th>
+                <th>投稿時間</th>
                 <th>トピック名</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>07/14</td>
-                <td>
-                  <div class="ellipsis adjustable_width_topic">
-                    <a href="/topic/show/topic_id/459506">時間の計算</a>
-                  </div>
-                </td>
-              </tr>
-              <tr class="even">
-                <td>07/13</td>
-                <td>
-                  <div class="ellipsis adjustable_width_topic" style="width: 302px;">
-                    <a href="/topic/show/topic_id/459501">e-timecard</a>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
+                  <tr>
+              <td>07/14</td>
+              <td>
+                <div class="ellipsis adjustable_width_topic">
+                  <a href="/topic/show/topic_id/459506">時間の計算</a>
+                </div>
+              </td>
+            </tr>
+            <tr class="even">
+              <td>07/13</td>
+              <td>
+                <div class="ellipsis adjustable_width_topic">
+                  <a href="/topic/show/topic_id/459501">e-timecard</a>
+                </div>
+              </td>
+            </tr>
+            
+              </tbody>
           </table>
+
         </div>
       </div>
       <div class="gadget_section">
